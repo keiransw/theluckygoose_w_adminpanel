@@ -185,48 +185,19 @@
 <h2 style="margin:0 0 24px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.4vw,58px);line-height:1.05">Chosen by eye,<br>aged in house.</h2>
 <p style="margin:0 0 38px;max-width:54ch;font-weight:300;font-size:16.5px;line-height:1.7;color:#CFC4AC">Rib-eyes and striploins from farms we rate — Canada, the States, Uruguay, Ireland, New Zealand — rested in the cabinet until they're ready, then sold by weight and finished over fire.</p>
 <div style="display:flex;flex-direction:column;gap:15px">
+<sc-if value="{{ cabinetFailed }}" hint-placeholder-val="{{ false }}">
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17.5px;color:#CFC4AC">Cuts temporarily unavailable, please call us on <a href="tel:+35699743687" style="font-style:italic">+356 9974 3687</a>.</p>
+</sc-if>
+<sc-for list="{{ cabinetCuts }}" as="cut" hint-placeholder-count="0">
 <div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">USDA Prime Rib-Eye</span>
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">{{ cut.name }}</span>
 <span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€46</span>
+<sc-if value="{{ cut.numeric }}" hint-placeholder-val="{{ true }}"><span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">{{ cut.price }}</span></sc-if>
+<sc-if value="{{ cut.word }}" hint-placeholder-val="{{ false }}"><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#B9AE97">{{ cut.price }}</span></sc-if>
 </div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Canadian Rib-Eye</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€45</span>
+</sc-for>
 </div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Uruguayan Rib-Eye</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€35</span>
-</div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Irish Rib-Eye</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€35</span>
-</div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">New Zealand Grass-Fed Rib-Eye</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€33</span>
-</div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Canadian Striploin</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€31</span>
-</div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Argentine Rib-Eye</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€31</span>
-</div>
-<div style="display:flex;align-items:baseline">
-<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Snake River Farms Rib-Eye</span>
-<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
-<span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#B9AE97">market</span>
-</div>
-</div>
-<p style="margin:32px 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17.5px;line-height:1.6;color:#8E8471">Per 300 g, carved to order. The cabinet rotates — ask what's ready tonight. Off the board: Fiorentina for two, Stone Axe wagyu short rib, aged picanha.</p>
+<p style="margin:32px 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17.5px;line-height:1.6;color:#8E8471">{{ cabinetNote }}</p>
 </div>
 </div>
 </section>
@@ -357,7 +328,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;showTicker&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;},&quot;mapStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;standard&quot;],&quot;default&quot;:&quot;dark&quot;,&quot;tsType&quot;:&quot;\&quot;dark\&quot; | \&quot;standard\&quot;&quot;,&quot;section&quot;:&quot;Find Us&quot;}}">
 class Component extends DCLogic {
-state = { tab: 0, navBg: 0, lb: null, menu: false, menuData: null, menuFailed: false, hoursData: null, hoursFailed: false, gallery: null, galleryFailed: false };
+state = { tab: 0, navBg: 0, lb: null, menu: false, menuData: null, menuFailed: false, hoursData: null, hoursFailed: false, gallery: null, galleryFailed: false, cabinet: null, cabinetFailed: false };
 DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 DAY_FULL = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 DAY_SHORT = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -402,7 +373,12 @@ w: dims[i] ? dims[i][0] : undefined, h: dims[i] ? dims[i][1] : undefined
 })) });
 });
 }).catch(() => this.setState({ galleryFailed: true }));
-Promise.all([menu, hours, gallery]).then(() => document.documentElement.setAttribute('data-lg-content', ''));
+const cabinet = this.getJSON('data/cabinet.json').then(j => {
+const c = j && Array.isArray(j.cuts) ? j.cuts.filter(x => x && x.name) : [];
+if (!c.length) throw new Error('empty');
+this.setState({ cabinet: { cuts: c, note: String(j.note || '') } });
+}).catch(() => this.setState({ cabinetFailed: true }));
+Promise.all([menu, hours, gallery, cabinet]).then(() => document.documentElement.setAttribute('data-lg-content', ''));
 }
 menuItem(it) {
 const desc = String(it.description || '');
@@ -525,6 +501,9 @@ menuPanels: secs.map((s, i) => ({
 display: t === i ? 'block' : 'none',
 items: (Array.isArray(s.items) ? s.items : []).filter(it => it && it.name).map(it => this.menuItem(it))
 })),
+cabinetFailed: this.state.cabinetFailed,
+cabinetCuts: ((this.state.cabinet && this.state.cabinet.cuts) || []).map(c => { const pr = String(c.price || '').trim(); const num = /\d/.test(pr); return { name: c.name, price: pr, numeric: num, word: !!pr && !num }; }),
+cabinetNote: (this.state.cabinet && this.state.cabinet.note) || '',
 galleryFailed: this.state.galleryFailed,
 galleryImgs: g.map(x => ({ src: x.image, alt: x.alt, w: x.w, h: x.h })),
 openGallery: (e) => {

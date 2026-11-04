@@ -1,0 +1,37 @@
+{
+  "cuts": [
+    {
+      "name": "USDA Prime Rib-Eye",
+      "price": "€46"
+    },
+    {
+      "name": "Canadian Rib-Eye",
+      "price": "€45"
+    },
+    {
+      "name": "Uruguayan Rib-Eye",
+      "price": "€35"
+    },
+    {
+      "name": "Irish Rib-Eye",
+      "price": "€35"
+    },
+    {
+      "name": "New Zealand Grass-Fed Rib-Eye",
+      "price": "€33"
+    },
+    {
+      "name": "Canadian Striploin",
+      "price": "€31"
+    },
+    {
+      "name": "Argentine Rib-Eye",
+      "price": "€31"
+    },
+    {
+      "name": "Snake River Farms Rib-Eye",
+      "price": "market"
+    }
+  ],
+  "note": "Per 300 g, carved to order. The cabinet rotates — ask what's ready tonight. Off the board: Fiorentina for two, Stone Axe wagyu short rib, aged picanha."
+}
