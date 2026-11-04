@@ -1,0 +1,127 @@
+media:
+  input: images/uploads
+  output: /images/uploads
+
+content:
+  - name: menu
+    label: Menu
+    description: The dishes shown in the Menu section of the website. Each section is one tab.
+    type: file
+    path: data/menu.json
+    format: json
+    fields:
+      - name: sections
+        label: Menu sections
+        description: Each section appears as a tab above the menu (e.g. "Small Plates"). Drag to change the order.
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - name: name
+            label: Section name
+            description: The tab title, e.g. "The Grill".
+            type: string
+            required: true
+          - name: items
+            label: Dishes
+            description: The dishes in this section, in the order they should appear.
+            type: object
+            list:
+              collapsible: true
+            fields:
+              - name: name
+                label: Dish name
+                type: string
+                required: true
+              - name: description
+                label: Description
+                description: A short line about the dish, up to 120 characters. To link to another part of the page, write [link text](#cabinet).
+                type: text
+                options:
+                  maxlength: 120
+              - name: price
+                label: Price
+                description: Optional. Type it exactly as you want it shown, e.g. "€14", "€12.50" or "from €8". Leave empty to hide the price.
+                type: string
+
+  - name: hours
+    label: Opening hours
+    description: Shown at the top of the website and in the Find Us section. Days with the same hours are grouped automatically.
+    type: file
+    path: data/hours.json
+    format: json
+    fields:
+      - name: monday
+        label: Monday
+        type: object
+        fields: &day
+          - name: closed
+            label: Closed all day
+            description: Tick this if the restaurant is closed on this day. Opening and closing times are then ignored.
+            type: boolean
+          - name: open
+            label: Opens at
+            description: 24-hour time, e.g. 16:30
+            type: string
+            pattern:
+              regex: "^$|^([01][0-9]|2[0-3]):[0-5][0-9]$"
+              message: Please use the 24-hour format HH:MM, e.g. 16:30
+          - name: close
+            label: Closes at
+            description: 24-hour time, e.g. 00:00 for midnight
+            type: string
+            pattern:
+              regex: "^$|^([01][0-9]|2[0-3]):[0-5][0-9]$"
+              message: Please use the 24-hour format HH:MM, e.g. 23:00
+      - name: tuesday
+        label: Tuesday
+        type: object
+        fields: *day
+      - name: wednesday
+        label: Wednesday
+        type: object
+        fields: *day
+      - name: thursday
+        label: Thursday
+        type: object
+        fields: *day
+      - name: friday
+        label: Friday
+        type: object
+        fields: *day
+      - name: saturday
+        label: Saturday
+        type: object
+        fields: *day
+      - name: sunday
+        label: Sunday
+        type: object
+        fields: *day
+
+  - name: gallery
+    label: Gallery
+    description: The photos in the scrolling Gallery strip. Drag to change the order.
+    type: file
+    path: data/gallery.json
+    format: json
+    fields:
+      - name: images
+        label: Photos
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - name: image
+            label: Photo
+            description: Upload photos under 2MB. Portrait or landscape both work.
+            type: image
+            required: true
+          - name: alt
+            label: Alt text
+            description: Describe the photo in a few words. This helps Google and visually impaired visitors.
+            type: string
+            required: true
+          - name: caption
+            label: Caption
+            description: Optional. Shown under the photo when a visitor taps to enlarge it.
+            type: string
