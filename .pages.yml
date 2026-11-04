@@ -15,11 +15,12 @@ content:
         description: Each section appears as a tab above the menu (e.g. "Small Plates"). Drag to change the order.
         type: object
         list:
-          collapsible: true
+          collapsible:
+            collapsed: true
+            summary: "{name}"
         fields:
           - name: name
             label: Section name
-            description: The tab title, e.g. "The Grill".
             type: string
             required: true
           - name: items
@@ -27,7 +28,9 @@ content:
             description: The dishes in this section, in the order they should appear.
             type: object
             list:
-              collapsible: true
+              collapsible:
+                collapsed: true
+                summary: "{name}"
             fields:
               - name: name
                 label: Dish name
@@ -35,7 +38,7 @@ content:
                 required: true
               - name: description
                 label: Description
-                description: A short line about the dish, up to 120 characters. To link to another part of the page, write [link text](#cabinet).
+                description: Up to 120 characters
                 type: text
                 options:
                   maxlength: 120
@@ -43,6 +46,36 @@ content:
                 label: Price
                 description: Optional. Type it exactly as you want it shown, e.g. "€14", "€12.50" or "from €8". Leave empty to hide the price.
                 type: string
+
+  - name: cabinet
+    label: The Cabinet
+    description: The dry-aged cuts and prices shown in The Cabinet section of the website.
+    type: file
+    path: data/cabinet.json
+    format: json
+    fields:
+      - name: cuts
+        label: Cuts
+        description: Drag to change the order.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} — {price}"
+        fields:
+          - name: name
+            label: Cut
+            description: e.g. "Irish Rib-Eye"
+            type: string
+            required: true
+          - name: price
+            label: Price
+            description: Per 300 g, e.g. "€35". Write "market" for market price. Leave empty to hide.
+            type: string
+      - name: note
+        label: Note under the list
+        description: The small italic line below the cuts.
+        type: text
 
   - name: hours
     label: Opening hours
@@ -109,7 +142,9 @@ content:
         label: Photos
         type: object
         list:
-          collapsible: true
+          collapsible:
+            collapsed: true
+            summary: "{alt}"
         fields:
           - name: image
             label: Photo
