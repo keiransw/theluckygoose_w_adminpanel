@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Lucky Goose | Gastro Restaurant | Ta' Xbiex, Malta</title>
+<meta name="description" content="The Lucky Goose is a gastro restaurant on the Ta' Xbiex seafront in Malta, serving tapas, hand-made pasta and dry-aged steaks from our in-house ageing cabinet. Open Monday to Saturday from late afternoon till midnight." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.theluckygoose.com.mt/" />
+<meta property="og:type" content="restaurant" />
+<meta property="og:site_name" content="The Lucky Goose" />
+<meta property="og:title" content="The Lucky Goose | Gastro Restaurant | Ta' Xbiex, Malta" />
+<meta property="og:description" content="Tapas, hand-made pasta and dry-aged steaks on the Ta' Xbiex seafront, Malta." />
+<meta property="og:image" content="https://www.theluckygoose.com.mt/img/exterior-h.jpg" />
+<meta property="og:image:width" content="1130" />
+<meta property="og:image:height" content="1697" />
+<meta property="og:image:alt" content="The Lucky Goose facade at night, Ta' Xbiex seafront" />
+<meta name="twitter:title" content="The Lucky Goose | Gastro Restaurant | Ta' Xbiex, Malta" />
+<meta name="twitter:description" content="Tapas, hand-made pasta and dry-aged steaks on the Ta' Xbiex seafront, Malta." />
+<meta name="twitter:image" content="https://www.theluckygoose.com.mt/img/exterior-h.jpg" />
+<meta property="og:url" content="https://www.theluckygoose.com.mt/" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"The Lucky Goose","description":"Gastro restaurant on the Ta' Xbiex seafront serving tapas, hand-made pasta and in-house dry-aged steaks.","url":"https://www.theluckygoose.com.mt/","image":["https://www.theluckygoose.com.mt/img/exterior-h.jpg","https://www.theluckygoose.com.mt/img/steak-close-l.jpg","https://www.theluckygoose.com.mt/img/octopus-l.jpg"],"logo":"https://www.theluckygoose.com.mt/icon-512.png","telephone":"+35699743687","email":"info@theluckygoose.com.mt","servesCuisine":["Mediterranean","Maltese","Tapas","Steakhouse","Italian"],"priceRange":"$$$","currenciesAccepted":"EUR","address":{"@type":"PostalAddress","streetAddress":"63, Ix-Xatt Ta' Xbiex","addressLocality":"Ta' Xbiex","postalCode":"XBX 1028","addressCountry":"MT"},"geo":{"@type":"GeoCoordinates","latitude":35.8970941,"longitude":14.4929158},"hasMap":"https://www.google.com/maps/search/?api=1&query=The+Lucky+Goose+Ta+Xbiex","acceptsReservations":"https://app.tableo.com/widget/theluckygoose","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"16:30","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"16:00","closes":"00:00"}],"sameAs":["https://www.facebook.com/TheLuckyGooseGastro/","https://www.instagram.com/__theluckygoosegastro__/"]}</script>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0D0A07">
+<link rel="preload" href="img/exterior-h.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="preload" href="fonts/jost-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/goose.png" as="image">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" href="https://unpkg.com/react@18.3.1/umd/react.production.min.js" as="script" crossorigin="anonymous" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z">
+<link rel="preload" href="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" as="script" crossorigin="anonymous" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1">
+<style>@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:block;src:url(fonts/cormorant-italic-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:block;src:url(fonts/cormorant-italic-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:block;src:url(fonts/cormorant-italic-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:block;src:url(fonts/cormorant-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:block;src:url(fonts/cormorant-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:block;src:url(fonts/cormorant-italic-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:block;src:url(fonts/cormorant-italic-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:block;src:url(fonts/cormorant-italic-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:block;src:url(fonts/cormorant-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:block;src:url(fonts/cormorant-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:block;src:url(fonts/cormorant-normal-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:block;src:url(fonts/cormorant-normal-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:block;src:url(fonts/cormorant-normal-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:block;src:url(fonts/cormorant-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:block;src:url(fonts/cormorant-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:block;src:url(fonts/cormorant-normal-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:block;src:url(fonts/cormorant-normal-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:block;src:url(fonts/cormorant-normal-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:block;src:url(fonts/cormorant-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:block;src:url(fonts/cormorant-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;src:url(fonts/cormorant-normal-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;src:url(fonts/cormorant-normal-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;src:url(fonts/cormorant-normal-vietnamese.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;src:url(fonts/cormorant-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;src:url(fonts/cormorant-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Jost';font-style:italic;font-weight:300;font-display:block;src:url(fonts/jost-italic-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Jost';font-style:italic;font-weight:300;font-display:block;src:url(fonts/jost-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Jost';font-style:italic;font-weight:300;font-display:block;src:url(fonts/jost-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Jost';font-style:italic;font-weight:400;font-display:block;src:url(fonts/jost-italic-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Jost';font-style:italic;font-weight:400;font-display:block;src:url(fonts/jost-italic-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Jost';font-style:italic;font-weight:400;font-display:block;src:url(fonts/jost-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Jost';font-style:normal;font-weight:300;font-display:block;src:url(fonts/jost-normal-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Jost';font-style:normal;font-weight:300;font-display:block;src:url(fonts/jost-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Jost';font-style:normal;font-weight:300;font-display:block;src:url(fonts/jost-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:block;src:url(fonts/jost-normal-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:block;src:url(fonts/jost-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:block;src:url(fonts/jost-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:block;src:url(fonts/jost-normal-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:block;src:url(fonts/jost-normal-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:block;src:url(fonts/jost-normal-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}#lg-loader{position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483000;background:#0D0A07;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;opacity:1;transition:opacity .5s ease}#lg-loader.lgl-out{opacity:0;pointer-events:none}.lgl-mark{position:relative;height:64px;animation:lglPulse 2.4s ease-in-out infinite}.lgl-mark img{display:block;height:64px;width:auto}.lgl-shine{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(105deg,rgba(255,246,214,0) 38%,rgba(255,246,214,.95) 50%,rgba(255,246,214,0) 62%);background-size:300% 100%;background-repeat:no-repeat;-webkit-mask:url(img/goose.png) center/contain no-repeat;mask:url(img/goose.png) center/contain no-repeat;animation:lglShine 2.2s ease-in-out infinite}.lgl-name{font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.32em;font-weight:500;text-transform:uppercase;white-space:nowrap;color:#F2E9D8;padding-left:.32em;opacity:0;animation:lglIn .9s ease .25s forwards}.lgl-bar{width:132px;height:1px;background:rgba(234,205,102,.18);overflow:hidden}.lgl-bar span{display:block;height:100%;width:100%;background:#EACD66;transform-origin:0 50%;transform:scaleX(0);transition:transform .4s ease}@keyframes lglPulse{0%,100%{opacity:1}50%{opacity:.62}}@keyframes lglShine{0%{background-position:110% 0}100%{background-position:-10% 0}}@keyframes lglIn{to{opacity:1}}html.lg-loading header#top *{animation-play-state:paused!important}@media (prefers-reduced-motion:reduce){.lgl-mark{animation:none}.lgl-shine{display:none}.lgl-name{animation:none;opacity:1}.lgl-bar span{transition:none}}x-dc{display:none!important}</style>
+<noscript><style>#lg-loader{display:none}</style></noscript>
+<script src="./support.js" defer></script>
+</head>
+<body>
+<div id="lg-loader" aria-hidden="true"><div class="lgl-mark"><img src="img/goose.png" width="98" height="160" alt=""><span class="lgl-shine"></span></div><div class="lgl-name">The Lucky Goose</div><div class="lgl-bar"><span></span></div></div>
+<script>(function(){var d=document,r=d.documentElement,L=d.getElementById('lg-loader'),B=L.querySelector('.lgl-bar span'),P=["img/exterior-h.webp","img/steak-wine-c.webp","img/mussels-c.webp","img/risotto-c.webp","img/octopus-c.webp","img/wine-list-c.webp","img/dry-ager-c.webp"],X=[],cap=10000,gone=0,n=0,t=P.length+2,keep=[];r.classList.add('lg-loading');function bar(){B.style.transform='scaleX('+Math.min(1,n/t)+')'}function one(){n++;bar()}function load(u,cb){var i=new Image();i.decoding='async';i.onload=function(){cb&&cb()};i.onerror=function(){if(/\.webp$/.test(i.src)){i.onerror=function(){cb&&cb()};i.src=i.src.replace(/\.webp$/,'.jpg')}else{cb&&cb()}};i.src=u;keep.push(i)}P.forEach(function(u){load(u,one)});(d.fonts&&d.fonts.ready?d.fonts.ready:Promise.resolve()).then(one);fetch('data/gallery.json',{cache:'no-cache'}).then(function(s){return s.json()}).then(function(j){var a=(j&&j.images)||[];a.forEach(function(g){if(!g||!g.image)return;t++;load(g.image,one);var m=String(g.image).match(/^(\/?img\/.+)-g\.webp$/);if(m)X.push(m[1]+'-l.webp')});one()})["catch"](one);function out(){if(gone)return;gone=1;n=t;bar();setTimeout(function(){r.classList.remove('lg-loading');L.classList.add('lgl-out');setTimeout(function(){L.parentNode&&L.parentNode.removeChild(L)},550);var k=0;(function nx(){if(k<X.length)load(X[k++],nx)})()},300)}(function chk(){if(gone)return;var ready=d.querySelector('header#top');if(ready&&n>=t&&r.hasAttribute('data-lg-content')){out()}else if(performance.now()>=cap&&ready){out()}else{requestAnimationFrame(chk)}})();setTimeout(function(){var f=setInterval(function(){if(d.querySelector('header#top')){clearInterval(f);out()}},50)},cap)})();</script>
+<x-dc>
+<helmet>
+<style>html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;background:#0D0A07;color:#F2E9D8;font-family:'Jost',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}a{color:#EACD66;text-decoration:none;transition:color .25s ease,background .25s ease,border-color .25s ease}a:hover{color:#F2E9D8}::selection{background:#EACD66;color:#14100A}img{max-width:100%;height:auto}.lg-burger{display:none !important}@keyframes lgRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}@keyframes lgKenburns{from{transform:scale(1)}to{transform:scale(1.07)}}@keyframes lgTicker{to{transform:translateX(-50%)}}@media(max-width:900px){html{scroll-padding-top:70px}.lg-nav{height:64px !important}.lg-navlinks{display:none !important}.lg-burger{display:flex !important}.lg-grid2{grid-template-columns:minmax(0,1fr) !important}.lg-hero-img{object-position:62% 20% !important}}@media(max-width:620px){.lg-collage{padding-bottom:0 !important}.lg-collage-inset{display:none !important}.lg-footer{justify-content:center !important;text-align:center !important}.lg-tab{padding:11px 12px 14px !important;letter-spacing:.13em !important;font-size:12px !important}}</style>
+</helmet>
+<nav data-screen-label="Nav" class="lg-nav" style="position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 clamp(16px,3vw,44px);height:84px;container-type:inline-size">
+<div style="position:absolute;inset:0;background:rgba(13,10,7,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(242,233,216,.08);opacity:{{ navOpaque }};transition:opacity .35s ease"></div>
+<a href="#top" style="position:relative;display:flex;align-items:center;gap:13px;color:#F2E9D8">
+<img src="img/goose.png" width="98" height="160" alt="The Lucky Goose" style="height:38px;width:auto;display:block">
+<span style="font-size:13px;letter-spacing:.32em;font-weight:500;text-transform:uppercase;white-space:nowrap">The Lucky Goose</span>
+</a>
+<div class="lg-navlinks" style="position:relative;display:flex;align-items:center;gap:clamp(10px,1.8vw,32px)">
+<a href="#house" style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B9AE97;white-space:nowrap" style-hover="color:#EACD66">The House</a>
+<a href="#cabinet" style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B9AE97;white-space:nowrap" style-hover="color:#EACD66">The Cabinet</a>
+<a href="#menu" style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B9AE97;white-space:nowrap" style-hover="color:#EACD66">Menu</a>
+<a href="#gallery" style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B9AE97;white-space:nowrap" style-hover="color:#EACD66">Gallery</a>
+<a href="#visit" style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B9AE97;white-space:nowrap" style-hover="color:#EACD66">Find Us</a>
+<a href="https://app.tableo.com/widget/theluckygoose" target="_blank" rel="noopener" style="font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#EACD66;border:1px solid rgba(234,205,102,.55);padding:11px 20px;white-space:nowrap" style-hover="background:#EACD66;color:#14100A">Book a Table</a>
+</div>
+<button class="lg-burger" onClick="{{ toggleMenu }}" aria-label="{{ menuLabel }}" aria-expanded="{{ menuOpen }}" aria-controls="lg-mobile-menu" style="position:relative;display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:44px;height:44px;padding:0;background:none;border:1px solid rgba(234,205,102,.45);cursor:pointer">
+<span style="display:block;width:18px;height:1.5px;background:#EACD66;transition:transform .3s ease;transform:{{ bar1 }}"></span>
+<span style="display:block;width:18px;height:1.5px;background:#EACD66;transition:opacity .2s ease;opacity:{{ bar2 }}"></span>
+<span style="display:block;width:18px;height:1.5px;background:#EACD66;transition:transform .3s ease;transform:{{ bar3 }}"></span>
+</button>
+</nav>
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+<div id="lg-mobile-menu" style="position:fixed;top:64px;left:0;right:0;bottom:0;z-index:59;background:rgba(13,10,7,.98);backdrop-filter:blur(12px);display:flex;flex-direction:column;padding:12px 24px 32px;overflow-y:auto">
+<a href="#house" onClick="{{ closeMenu }}" style="display:block;padding:20px 0;border-bottom:1px solid rgba(242,233,216,.1);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#F2E9D8" style-hover="color:#EACD66">The House</a>
+<a href="#cabinet" onClick="{{ closeMenu }}" style="display:block;padding:20px 0;border-bottom:1px solid rgba(242,233,216,.1);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#F2E9D8" style-hover="color:#EACD66">The Cabinet</a>
+<a href="#menu" onClick="{{ closeMenu }}" style="display:block;padding:20px 0;border-bottom:1px solid rgba(242,233,216,.1);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#F2E9D8" style-hover="color:#EACD66">Menu</a>
+<a href="#gallery" onClick="{{ closeMenu }}" style="display:block;padding:20px 0;border-bottom:1px solid rgba(242,233,216,.1);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#F2E9D8" style-hover="color:#EACD66">Gallery</a>
+<a href="#visit" onClick="{{ closeMenu }}" style="display:block;padding:20px 0;border-bottom:1px solid rgba(242,233,216,.1);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#F2E9D8" style-hover="color:#EACD66">Find Us</a>
+<a href="https://app.tableo.com/widget/theluckygoose" target="_blank" rel="noopener" onClick="{{ closeMenu }}" style="display:block;margin-top:28px;text-align:center;background:#EACD66;color:#14100A;font-size:12.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:18px 24px" style-hover="background:#F2E9D8;color:#14100A">Book a Table</a>
+<a href="tel:+35699743687" style="display:block;margin-top:18px;text-align:center;font-size:12.5px;letter-spacing:.16em;color:#B9AE97" style-hover="color:#EACD66">+356 9974 3687</a>
+</div>
+</sc-if>
+<header id="top" data-screen-label="Hero" style="position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden">
+<img fetchpriority="high" decoding="async" src="img/exterior-h.webp" sc-camel-on-error="{{ webpFallback }}" width="1130" height="1697" alt="The Lucky Goose facade at night" class="lg-hero-img" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:50% 17%;filter:saturate(.96);animation:lgKenburns 26s ease-in-out infinite alternate">
+<div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(13,10,7,.66) 0%,rgba(13,10,7,.3) 36%,rgba(13,10,7,.62) 62%,rgba(13,10,7,.97) 100%),linear-gradient(100deg,rgba(13,10,7,.55) 0%,rgba(13,10,7,0) 55%)"></div>
+<div style="position:relative;width:100%;max-width:1280px;margin:0 auto;padding:120px clamp(22px,5vw,56px) clamp(48px,7vh,84px)">
+<p style="margin:0 0 18px;font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;color:#CFC4AC;animation:lgRise .8s cubic-bezier(.22,.61,.21,1) .15s both">Tapas · Pasta · Dry-Aged Steaks — Ta' Xbiex Seafront, Malta</p>
+<h1 style="margin:0;font-family:'Jost',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(44px,7.4vw,106px);line-height:1.02;letter-spacing:0.055em;animation:lgRise .8s cubic-bezier(.22,.61,.21,1) .28s both">The <span style="color:#EACD66">Lucky</span> Goose</h1>
+<p style="max-width:560px;font-weight:300;font-size:17.5px;line-height:1.65;color:#CFC4AC;margin:26px 0 34px;animation:lgRise .8s cubic-bezier(.22,.61,.21,1) .4s both">Fresh and seasonal, land and sea — hand-made pasta and steaks aged in our own cabinet, finished over fire.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;animation:lgRise .8s cubic-bezier(.22,.61,.21,1) .52s both">
+<a href="https://app.tableo.com/widget/theluckygoose" target="_blank" rel="noopener" style="display:inline-block;background:#EACD66;color:#14100A;font-size:12.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:17px 34px" style-hover="background:#F2E9D8;color:#14100A">Book a Table</a>
+<a href="#menu" style="display:inline-block;border:1px solid rgba(242,233,216,.35);color:#F2E9D8;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;padding:16px 34px" style-hover="border-color:#EACD66;color:#EACD66">Tonight's Menu</a>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(242,233,216,.18);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#B9AE97;animation:lgRise .8s cubic-bezier(.22,.61,.21,1) .64s both">
+<sc-for list="{{ heroHours }}" as="hh" hint-placeholder-count="0"><span>{{ hh.text }}</span></sc-for>
+<span>63, Ix-Xatt Ta' Xbiex</span>
+<a href="tel:+35699743687" style="color:#B9AE97;letter-spacing:.16em" style-hover="color:#EACD66">+356 9974 3687</a>
+</div>
+</div>
+</header>
+<sc-if value="{{ showTicker }}" hint-placeholder-val="{{ true }}">
+<div aria-hidden="true" style="overflow:hidden;overflow-x:clip;border-top:1px solid rgba(242,233,216,.1);border-bottom:1px solid rgba(242,233,216,.1);background:#0F0C08;padding:15px 0">
+<div style="display:flex;width:max-content;animation:lgTicker 32s linear infinite">
+<div style="display:flex;align-items:center;gap:36px;padding-right:36px">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">In-house dry-aged steaks</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Hand-made pasta</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Land &amp; sea small plates</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Daily specials on the board</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Wine · Gin · Whiskey</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+</div>
+<div style="display:flex;align-items:center;gap:36px;padding-right:36px">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">In-house dry-aged steaks</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Hand-made pasta</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Land &amp; sea small plates</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Daily specials on the board</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+<span style="font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471;white-space:nowrap">Wine · Gin · Whiskey</span>
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:15px;width:auto;opacity:.75">
+</div>
+</div>
+</div>
+</sc-if>
+<section id="house" data-screen-label="The House" style="max-width:1280px;margin:0 auto;padding:clamp(90px,12vh,150px) clamp(22px,5vw,56px) 60px">
+<div class="lg-grid2" style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,6vw,96px);align-items:center">
+<div data-reveal="true">
+<p style="margin:0 0 22px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471"><span style="color:#EACD66">N° 01</span> — The House</p>
+<h2 style="margin:0 0 30px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4.8vw,66px);line-height:1.04">Birds of a feather<br><em style="font-style:italic;font-weight:400;color:#EACD66">flock together.</em></h2>
+<p style="margin:0 0 20px;max-width:56ch;font-weight:300;font-size:17px;line-height:1.75;color:#CFC4AC">The Lucky Goose is a room on the Ta' Xbiex seafront that does a few things properly: tapas, pasta rolled fresh each day, and a cabinet of steaks aged in-house — chosen by eye, carved to order.</p>
+<p style="margin:0 0 34px;max-width:56ch;font-weight:300;font-size:17px;line-height:1.75;color:#CFC4AC">The menu follows the market and the board changes daily — a glass at the bar to start, the marina across the road, the lamps low.</p>
+<p style="margin:0;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#B9AE97"><span style="color:#EACD66">★ 4.7</span> on Tripadvisor &nbsp;·&nbsp; Travellers' Choice 2025</p>
+</div>
+<div data-reveal="true" class="lg-collage" style="position:relative;padding:0 0 76px">
+<img decoding="async" src="img/octopus-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1000" height="1330" alt="Octopus, citrus and capers" style="width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;display:block;border:1px solid rgba(242,233,216,.14);filter:saturate(.98)">
+<img decoding="async" src="img/wine-list-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1000" height="1258" alt="The wine list by lamplight" class="lg-collage-inset" style="position:absolute;bottom:0;left:-44px;width:52%;aspect-ratio:4/5;height:auto;object-fit:cover;display:block;border:1px solid rgba(242,233,216,.2);box-shadow:0 30px 70px rgba(0,0,0,.55)">
+</div>
+</div>
+</section>
+<section data-screen-label="Signatures" style="max-width:1280px;margin:0 auto;padding:60px clamp(22px,5vw,56px) clamp(90px,12vh,140px)">
+<div data-reveal="true" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:40px">
+<div>
+<p style="margin:0 0 16px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471"><span style="color:#EACD66">N° 02</span> — Signatures</p>
+<h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,4vw,54px);line-height:1.05">From the kitchen</h2>
+</div>
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#8E8471">cooked with care, skill &amp; passion</p>
+</div>
+<div data-reveal="true" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:26px">
+<figure style="margin:0">
+<div style="overflow:hidden;border:1px solid rgba(242,233,216,.12)">
+<img decoding="async" src="img/steak-wine-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1784" height="1250" alt="Dry-aged tagliata board" style="width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.22,.61,.21,1)" style-hover="transform:scale(1.045)">
+</div>
+<figcaption style="padding:18px 2px 0">
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:500">Tagliata for the table</p>
+<p style="margin:6px 0 0;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8E8471">Dry-aged · carved &amp; shared</p>
+</figcaption>
+</figure>
+<figure style="margin:0">
+<div style="overflow:hidden;border:1px solid rgba(242,233,216,.12)">
+<img decoding="async" src="img/mussels-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1000" height="1332" alt="Mussel tagliolini" style="width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.22,.61,.21,1)" style-hover="transform:scale(1.045)">
+</div>
+<figcaption style="padding:18px 2px 0">
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:500">Mussel tagliolini</p>
+<p style="margin:6px 0 0;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8E8471">House pasta · local mussels</p>
+</figcaption>
+</figure>
+<figure style="margin:0">
+<div style="overflow:hidden;border:1px solid rgba(242,233,216,.12)">
+<img decoding="async" src="img/risotto-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1671" height="1250" alt="Carabineros risotto" style="width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.22,.61,.21,1)" style-hover="transform:scale(1.045)">
+</div>
+<figcaption style="padding:18px 2px 0">
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:500">Carabineros risotto</p>
+<p style="margin:6px 0 0;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8E8471">Carnaroli · red prawn · bisque</p>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="cabinet" data-screen-label="The Cabinet" style="background:#14100A;border-top:1px solid rgba(242,233,216,.1);border-bottom:1px solid rgba(242,233,216,.1)">
+<div class="lg-grid2" style="max-width:1280px;margin:0 auto;padding:clamp(90px,12vh,140px) clamp(22px,5vw,56px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,90px);align-items:stretch">
+<div data-reveal="true" style="min-height:420px">
+<img decoding="async" src="img/dry-ager-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1041" height="1250" alt="The dry-ageing cabinet" style="width:100%;height:100%;object-fit:cover;display:block;border:1px solid rgba(242,233,216,.14)">
+</div>
+<div data-reveal="true" style="display:flex;flex-direction:column;justify-content:center">
+<p style="margin:0 0 22px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471"><span style="color:#EACD66">N° 03</span> — The Cabinet</p>
+<h2 style="margin:0 0 24px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.4vw,58px);line-height:1.05">Chosen by eye,<br>aged in house.</h2>
+<p style="margin:0 0 38px;max-width:54ch;font-weight:300;font-size:16.5px;line-height:1.7;color:#CFC4AC">Rib-eyes and striploins from farms we rate — Canada, the States, Uruguay, Ireland, New Zealand — rested in the cabinet until they're ready, then sold by weight and finished over fire.</p>
+<div style="display:flex;flex-direction:column;gap:15px">
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">USDA Prime Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€46</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Canadian Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€45</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Uruguayan Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€35</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Irish Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€35</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">New Zealand Grass-Fed Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€33</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Canadian Striploin</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€31</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Argentine Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-size:14.5px;letter-spacing:.08em;color:#EACD66">€31</span>
+</div>
+<div style="display:flex;align-items:baseline">
+<span style="font-family:'Cormorant Garamond',serif;font-size:21.5px;font-weight:500">Snake River Farms Rib-Eye</span>
+<span style="flex:1;border-bottom:1px dotted rgba(242,233,216,.3);margin:0 12px;transform:translateY(-5px)"></span>
+<span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#B9AE97">market</span>
+</div>
+</div>
+<p style="margin:32px 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17.5px;line-height:1.6;color:#8E8471">Per 300 g, carved to order. The cabinet rotates — ask what's ready tonight. Off the board: Fiorentina for two, Stone Axe wagyu short rib, aged picanha.</p>
+</div>
+</div>
+</section>
+<section id="menu" data-screen-label="Menu" style="max-width:1280px;margin:0 auto;padding:clamp(90px,12vh,150px) clamp(22px,5vw,56px)">
+<div data-reveal="true" style="text-align:center;max-width:720px;margin:0 auto">
+<p style="margin:0 0 18px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471"><span style="color:#EACD66">N° 04</span> — The Menu</p>
+<h2 style="margin:0 0 18px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.6vw,60px);line-height:1.05">A menu that follows<br>the market</h2>
+<p style="margin:0;font-weight:300;font-size:16.5px;line-height:1.7;color:#CFC4AC">Land &amp; sea, fresh and seasonal — with the day's specials chalked up by the door.</p>
+</div>
+<sc-if value="{{ menuShowTabs }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin:48px 0 40px;border-bottom:1px solid rgba(242,233,216,.12)">
+<sc-for list="{{ menuTabs }}" as="tab" hint-placeholder-count="0">
+<button class="lg-tab" onClick="{{ tab.pick }}" style="background:none;border:none;border-bottom:2px solid {{ tab.border }};cursor:pointer;font-family:'Jost',sans-serif;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;padding:12px 20px 16px;color:{{ tab.color }};transition:color .3s,border-color .3s" style-hover="color:#F2E9D8">{{ tab.name }}</button>
+</sc-for>
+</div>
+</sc-if>
+<div style="max-width:1000px;margin:0 auto">
+<sc-if value="{{ menuFailed }}" hint-placeholder-val="{{ false }}">
+<p style="margin:48px 0 0;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#CFC4AC">Menu temporarily unavailable, please call us on <a href="tel:+35699743687" style="font-style:italic">+356 9974 3687</a>.</p>
+</sc-if>
+<sc-for list="{{ menuPanels }}" as="panel" hint-placeholder-count="0">
+<div style="display:{{ panel.display }}">
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:34px 64px">
+<sc-for list="{{ panel.items }}" as="item" hint-placeholder-count="0">
+<div>
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:500">{{ item.name }}<sc-if value="{{ item.hasPrice }}" hint-placeholder-val="{{ false }}"><span style="margin-left:12px;font-family:'Jost',sans-serif;font-size:14.5px;font-weight:400;letter-spacing:.08em;color:#EACD66">{{ item.price }}</span></sc-if></p>
+<sc-if value="{{ item.hasDesc }}" hint-placeholder-val="{{ true }}"><p style="margin:5px 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.55;color:#A2977F">{{ item.pre }}<sc-if value="{{ item.hasLink }}" hint-placeholder-val="{{ false }}"><a href="{{ item.href }}" style="font-style:italic">{{ item.linkText }}</a></sc-if>{{ item.post }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+<p style="margin:52px 0 0;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#8E8471">Tonight's specials are chalked up on the board by the door.</p>
+</div>
+</section>
+<section id="gallery" data-screen-label="Gallery" style="padding:0 0 clamp(90px,12vh,140px)">
+<div data-reveal="true" style="max-width:1280px;margin:0 auto;padding:0 clamp(22px,5vw,56px) 36px;display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap">
+<div>
+<p style="margin:0 0 16px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471"><span style="color:#EACD66">N° 05</span> — Gallery</p>
+<h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,4vw,54px);line-height:1.05">The room &amp; the plates</h2>
+</div>
+<p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8E8471">scroll → · tap to enlarge</p>
+</div>
+<div data-reveal="true" style="display:flex;gap:16px;overflow-x:auto;padding:6px clamp(22px,5vw,56px) 20px;scroll-snap-type:x proximity;scrollbar-width:none">
+<sc-if value="{{ galleryFailed }}" hint-placeholder-val="{{ false }}">
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#CFC4AC">Gallery temporarily unavailable, please call us on <a href="tel:+35699743687" style="font-style:italic">+356 9974 3687</a>.</p>
+</sc-if>
+<sc-for list="{{ galleryImgs }}" as="gi" hint-placeholder-count="0">
+<img decoding="async" sc-camel-src="{{ gi.src }}" sc-camel-on-error="{{ webpFallback }}" width="{{ gi.w }}" height="{{ gi.h }}" alt="{{ gi.alt }}" data-idx="{{ $index }}" onClick="{{ openGallery }}" style="height:min(52vh,420px);width:auto;object-fit:cover;flex:none;scroll-snap-align:center;display:block;border:1px solid rgba(242,233,216,.12);cursor:zoom-in;transition:filter .4s" style-hover="filter:brightness(1.08)">
+</sc-for>
+</div>
+<p style="max-width:1280px;margin:10px auto 0;padding:0 clamp(22px,5vw,56px);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#8E8471">More from the pass on Instagram — <a href="https://www.instagram.com/__theluckygoosegastro__/" target="_blank" rel="noopener">@__theluckygoosegastro__</a></p>
+</section>
+<section id="book" data-screen-label="Reservations" style="max-width:1280px;margin:0 auto;padding:0 clamp(22px,5vw,56px) clamp(90px,12vh,140px)">
+<div data-reveal="true" class="lg-grid2" style="position:relative;overflow:hidden;border:1px solid rgba(234,205,102,.3);background:linear-gradient(155deg,#181209 0%,#100C07 70%);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr)">
+<div style="padding:clamp(40px,6vw,84px)">
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:52px;width:auto;margin-bottom:26px">
+<p style="margin:0 0 18px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#EACD66">Reservations</p>
+<h2 style="margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.6vw,60px);line-height:1.03">The table<br>is yours.</h2>
+<p style="margin:0 0 36px;max-width:44ch;font-weight:300;font-size:16.5px;line-height:1.7;color:#CFC4AC">Weekends go fast — book online in under a minute, or call and we'll see what we can do. Walk-ins welcome at the bar.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px">
+<a href="https://app.tableo.com/widget/theluckygoose" target="_blank" rel="noopener" style="display:inline-block;background:#EACD66;color:#14100A;font-size:12.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:17px 34px" style-hover="background:#F2E9D8;color:#14100A">Book Online</a>
+<a href="tel:+35699743687" style="display:inline-block;border:1px solid rgba(242,233,216,.35);color:#F2E9D8;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;padding:16px 34px" style-hover="border-color:#EACD66;color:#EACD66">Call +356 9974 3687</a>
+</div>
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:#8E8471">Groups &amp; private hire — <a href="mailto:info@theluckygoose.com.mt" style="font-style:italic">info@theluckygoose.com.mt</a></p>
+</div>
+<div style="min-height:360px">
+<img decoding="async" src="img/wine-list-c.webp" sc-camel-on-error="{{ webpFallback }}" width="1000" height="1258" alt="Lamplit table at The Lucky Goose" style="width:100%;height:100%;object-fit:cover;object-position:60% 40%;display:block;border-left:1px solid rgba(242,233,216,.12)">
+</div>
+</div>
+</section>
+<section id="visit" data-screen-label="Find Us" style="max-width:1280px;margin:0 auto;padding:0 clamp(22px,5vw,56px) clamp(100px,13vh,150px)">
+<div data-reveal="true">
+<p style="margin:0 0 16px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E8471"><span style="color:#EACD66">N° 06</span> — Find Us</p>
+<h2 style="margin:0 0 44px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,4vw,54px);line-height:1.05">On the seafront</h2>
+</div>
+<div data-reveal="true" class="lg-grid2" style="display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,5vw,72px);align-items:stretch">
+<div style="display:flex;flex-direction:column;gap:34px;justify-content:center">
+<div>
+<p style="margin:0 0 10px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#C9A845">Address</p>
+<p style="margin:0;font-weight:300;font-size:17px;line-height:1.65;color:#F2E9D8">63, Ix-Xatt Ta' Xbiex (Seafront)<br>Ta' Xbiex XBX 1028, Malta</p>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Lucky%20Goose%20Ta%27%20Xbiex" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase">Open in Google Maps →</a>
+</div>
+<div>
+<p style="margin:0 0 10px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#C9A845">Hours</p>
+<sc-if value="{{ hoursFailed }}" hint-placeholder-val="{{ false }}">
+<p style="margin:0;font-weight:300;font-size:17px;line-height:1.65;color:#CFC4AC">Opening hours temporarily unavailable, please call us on <a href="tel:+35699743687">+356 9974 3687</a>.</p>
+</sc-if>
+<sc-for list="{{ hoursRows }}" as="row" hint-placeholder-count="0">
+<div style="display:flex;justify-content:space-between;gap:16px;max-width:340px;font-weight:300;font-size:17px;line-height:1.9;color:#F2E9D8">
+<span>{{ row.days }}</span><span style="color:{{ row.color }}">{{ row.time }}</span>
+</div>
+</sc-for>
+</div>
+<div>
+<p style="margin:0 0 10px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#C9A845">Contact</p>
+<p style="margin:0;font-weight:300;font-size:17px;line-height:1.9"><a href="tel:+35699743687" style="color:#F2E9D8" style-hover="color:#EACD66">+356 9974 3687</a><br><a href="mailto:info@theluckygoose.com.mt" style="color:#F2E9D8" style-hover="color:#EACD66">info@theluckygoose.com.mt</a></p>
+</div>
+<div>
+<p style="margin:0 0 10px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#C9A845">Follow</p>
+<p style="margin:0;font-weight:300;font-size:17px;line-height:1.9"><a href="https://www.instagram.com/__theluckygoosegastro__/" target="_blank" rel="noopener" style="color:#F2E9D8" style-hover="color:#EACD66">Instagram</a><br><a href="https://www.facebook.com/TheLuckyGooseGastro/" target="_blank" rel="noopener" style="color:#F2E9D8" style-hover="color:#EACD66">Facebook</a></p>
+</div>
+</div>
+<div style="border:1px solid rgba(242,233,216,.14);min-height:480px;background:#14100A">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.037627751489!2d14.4929158!3d35.8970941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5b969338fdd7%3A0xb677d74cb2f5aebc!2sThe%20Lucky%20Goose!5e0!3m2!1sen!2smt!4v1783788412942!5m2!1sen!2smt" width="100%" height="100%" style="border:0;display:block;min-height:480px;filter:{{ mapFilter }}" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin" title="Map — The Lucky Goose, Ta' Xbiex"></iframe>
+</div>
+</div>
+</section>
+<footer data-screen-label="Footer" style="border-top:1px solid rgba(242,233,216,.1)">
+<div class="lg-footer" style="max-width:1280px;margin:0 auto;padding:36px clamp(22px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:16px 30px;flex-wrap:wrap">
+<div style="display:flex;align-items:center;gap:12px">
+<img decoding="async" src="img/goose.png" width="98" height="160" alt="The Lucky Goose emblem — a goose in gold line-work" style="height:28px;width:auto">
+<span style="font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:#8E8471">The Lucky Goose — Ta' Xbiex, Malta</span>
+</div>
+<p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16.5px;color:#8E8471">Birds of a feather flock together.</p>
+<p style="margin:0;font-size:12px;letter-spacing:.14em;color:#8E8471">© 2026 The Lucky Goose &nbsp;·&nbsp; <a href="https://www.instagram.com/__theluckygoosegastro__/" target="_blank" rel="noopener" style="color:#8E8471" style-hover="color:#EACD66">Instagram</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/TheLuckyGooseGastro/" target="_blank" rel="noopener" style="color:#8E8471" style-hover="color:#EACD66">Facebook</a></p>
+</div>
+</footer>
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+<div onClick="{{ closeLb }}" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;background:rgba(8,6,3,.94);backdrop-filter:blur(6px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:min(6vw,64px);cursor:zoom-out">
+{{ lbImg }}
+<p onClick="{{ stopProp }}" style="margin:20px 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:#CFC4AC;cursor:default">{{ lbCap }} <span style="font-family:'Jost',sans-serif;font-style:normal;font-size:11.5px;letter-spacing:.24em;color:#8E8471;margin-left:14px">{{ lbCount }}</span></p>
+<button onClick="{{ closeLb }}" aria-label="Close" style="position:absolute;top:26px;right:30px;width:52px;height:52px;border-radius:50%;background:none;border:1px solid rgba(242,233,216,.3);color:#F2E9D8;font-size:17px;cursor:pointer;font-family:'Jost',sans-serif;transition:border-color .25s,color .25s" style-hover="border-color:#EACD66;color:#EACD66">✕</button>
+<button onClick="{{ prevLb }}" aria-label="Previous" style="position:absolute;left:26px;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:none;border:1px solid rgba(242,233,216,.3);color:#F2E9D8;font-size:19px;cursor:pointer;font-family:'Jost',sans-serif;transition:border-color .25s,color .25s" style-hover="border-color:#EACD66;color:#EACD66">←</button>
+<button onClick="{{ nextLb }}" aria-label="Next" style="position:absolute;right:26px;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:none;border:1px solid rgba(242,233,216,.3);color:#F2E9D8;font-size:19px;cursor:pointer;font-family:'Jost',sans-serif;transition:border-color .25s,color .25s" style-hover="border-color:#EACD66;color:#EACD66">→</button>
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showTicker&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;},&quot;mapStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;standard&quot;],&quot;default&quot;:&quot;dark&quot;,&quot;tsType&quot;:&quot;\&quot;dark\&quot; | \&quot;standard\&quot;&quot;,&quot;section&quot;:&quot;Find Us&quot;}}">
+class Component extends DCLogic {
+state = { tab: 0, navBg: 0, lb: null, menu: false, menuData: null, menuFailed: false, hoursData: null, hoursFailed: false, gallery: null, galleryFailed: false };
+DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+DAY_FULL = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+DAY_SHORT = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+webpFallback = (e) => {
+const el = e.currentTarget;
+if (/\.webp$/.test(el.src)) el.src = el.src.replace(/\.webp$/, '.jpg');
+};
+getJSON(url) {
+return fetch(url, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+}
+probe(src) {
+return new Promise(res => {
+const i = new Image();
+i.onload = () => res([i.naturalWidth, i.naturalHeight]);
+i.onerror = () => {
+if (!/\.webp$/.test(src)) return res(null);
+const j = new Image();
+j.onload = () => res([j.naturalWidth, j.naturalHeight]);
+j.onerror = () => res(null);
+j.src = src.replace(/\.webp$/, '.jpg');
+};
+i.src = src;
+});
+}
+loadContent() {
+const menu = this.getJSON('data/menu.json').then(j => {
+const s = j && Array.isArray(j.sections) ? j.sections.filter(x => x && x.name) : [];
+if (!s.length) throw new Error('empty');
+this.setState({ menuData: s });
+}).catch(() => this.setState({ menuFailed: true }));
+const hours = this.getJSON('data/hours.json').then(j => {
+if (!j || !this.DAYS.every(d => j[d])) throw new Error('incomplete');
+this.setState({ hoursData: j });
+}).catch(() => this.setState({ hoursFailed: true }));
+const gallery = this.getJSON('data/gallery.json').then(j => {
+const list = j && Array.isArray(j.images) ? j.images.filter(x => x && x.image) : [];
+if (!list.length) throw new Error('empty');
+return Promise.all(list.map(x => this.probe(String(x.image)))).then(dims => {
+this.setState({ gallery: list.map((x, i) => ({
+image: String(x.image), alt: x.alt || '', caption: x.caption || '',
+w: dims[i] ? dims[i][0] : undefined, h: dims[i] ? dims[i][1] : undefined
+})) });
+});
+}).catch(() => this.setState({ galleryFailed: true }));
+Promise.all([menu, hours, gallery]).then(() => document.documentElement.setAttribute('data-lg-content', ''));
+}
+menuItem(it) {
+const desc = String(it.description || '');
+const price = String(it.price || '').trim();
+const m = desc.match(/\[([^\]]+)\]\(([^)\s]+)\)/);
+return {
+name: it.name, price, hasPrice: !!price, hasDesc: !!desc.trim(),
+pre: m ? desc.slice(0, m.index) : desc,
+hasLink: !!m, linkText: m ? m[1] : '', href: m ? m[2] : '',
+post: m ? desc.slice(m.index + m[0].length) : ''
+};
+}
+hourGroups() {
+const j = this.state.hoursData;
+if (!j) return [];
+const g = [];
+this.DAYS.forEach((d, i) => {
+const v = j[d] || {};
+const closed = !!v.closed || !v.open;
+const key = closed ? 'closed' : v.open + '|' + (v.close || '');
+const last = g[g.length - 1];
+if (last && last.key === key) last.end = i;
+else g.push({ key, start: i, end: i, closed, open: v.open || '', close: v.close || '' });
+});
+return g;
+}
+componentDidMount() {
+this.loadContent();
+this._onScroll = () => {
+const v = window.scrollY > 40 ? 1 : 0;
+if (v !== this.state.navBg) this.setState({ navBg: v });
+};
+window.addEventListener('scroll', this._onScroll, { passive: true });
+this._onScroll();
+this._onKey = (e) => {
+if (e.key === 'Escape' && this.state.menu) { this.setState({ menu: false }); return; }
+if (this.state.lb === null) return;
+const n = (this.state.gallery || []).length;
+if (!n) return;
+if (e.key === 'Escape') this.setState({ lb: null });
+if (e.key === 'ArrowRight') this.setState(s => ({ lb: (s.lb + 1) % n }));
+if (e.key === 'ArrowLeft') this.setState(s => ({ lb: (s.lb - 1 + n) % n }));
+};
+window.addEventListener('keydown', this._onKey);
+this._onResize = () => { if (window.innerWidth > 900 && this.state.menu) this.setState({ menu: false }); };
+window.addEventListener('resize', this._onResize);
+const els = Array.from(document.querySelectorAll('[data-reveal]'));
+this._io = new IntersectionObserver((ents) => {
+ents.forEach(en => {
+if (en.isIntersecting) {
+en.target.style.opacity = '1';
+en.target.style.transform = 'none';
+this._io.unobserve(en.target);
+}
+});
+}, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+els.forEach(el => {
+const r = el.getBoundingClientRect();
+if (r.top > window.innerHeight * 0.92) {
+el.style.opacity = '0';
+el.style.transform = 'translateY(30px)';
+el.style.transition = 'opacity .85s ease, transform .85s cubic-bezier(.22,.61,.21,1)';
+this._io.observe(el);
+}
+});
+}
+componentWillUnmount() {
+window.removeEventListener('scroll', this._onScroll);
+window.removeEventListener('keydown', this._onKey);
+window.removeEventListener('resize', this._onResize);
+if (this._io) this._io.disconnect();
+}
+renderVals() {
+const lb = this.state.lb;
+const g = this.state.gallery || [];
+const secs = this.state.menuData || [];
+const t = Math.min(this.state.tab, Math.max(0, secs.length - 1));
+const big = src => { const m = src.match(/^(\/?img\/.+)-g\.webp$/); return m ? m[1] + '-l.webp' : src; };
+const groups = this.hourGroups();
+const span = (names, x) => x.start === x.end ? names[x.start] : names[x.start] + ' – ' + names[x.end];
+let firstOpen = true;
+const heroHours = groups.map(x => {
+const d = span(this.DAY_SHORT, x);
+if (x.closed) return { text: d + ' closed' };
+const text = firstOpen ? d + ' ' + x.open + ' till late' : d + ' from ' + x.open;
+firstOpen = false;
+return { text };
+});
+const hoursRows = groups.map(x => ({
+days: span(this.DAY_FULL, x),
+time: x.closed ? 'Closed' : (x.close ? x.open + ' – ' + x.close : x.open),
+color: x.closed ? '#8E8471' : '#CFC4AC'
+}));
+return {
+webpFallback: this.webpFallback,
+showTicker: this.props.showTicker ?? true,
+mapFilter: (this.props.mapStyle ?? 'dark') === 'dark'
+? 'grayscale(1) invert(0.92) hue-rotate(180deg) brightness(0.92) contrast(1.08)'
+: 'none',
+navOpaque: this.state.menu ? 1 : this.state.navBg,
+menuOpen: this.state.menu,
+menuLabel: this.state.menu ? 'Close menu' : 'Open menu',
+toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+closeMenu: () => this.setState({ menu: false }),
+bar1: this.state.menu ? 'translateY(7.5px) rotate(45deg)' : 'none',
+bar2: this.state.menu ? 0 : 1,
+bar3: this.state.menu ? 'translateY(-7.5px) rotate(-45deg)' : 'none',
+heroHours,
+hoursRows,
+hoursFailed: this.state.hoursFailed,
+menuShowTabs: !this.state.menuFailed,
+menuFailed: this.state.menuFailed,
+menuTabs: secs.map((s, i) => ({
+name: s.name,
+pick: () => this.setState({ tab: i }),
+color: t === i ? '#F2E9D8' : '#8E8471',
+border: t === i ? '#EACD66' : 'transparent'
+})),
+menuPanels: secs.map((s, i) => ({
+display: t === i ? 'block' : 'none',
+items: (Array.isArray(s.items) ? s.items : []).filter(it => it && it.name).map(it => this.menuItem(it))
+})),
+galleryFailed: this.state.galleryFailed,
+galleryImgs: g.map(x => ({ src: x.image, alt: x.alt, w: x.w, h: x.h })),
+openGallery: (e) => {
+const i = parseInt(e.currentTarget.dataset.idx, 10);
+if (!isNaN(i)) this.setState({ lb: i });
+},
+lbOpen: lb !== null && !!g[lb],
+lbImg: lb === null || !g[lb] ? null : React.createElement('img', {
+key: g[lb].image,
+src: big(g[lb].image),
+onError: this.webpFallback,
+alt: g[lb].caption || g[lb].alt,
+onClick: (e) => e.stopPropagation(),
+style: {
+maxWidth: 'min(1100px,90vw)', maxHeight: '78vh', objectFit: 'contain',
+border: '1px solid rgba(242,233,216,.22)', boxShadow: '0 40px 120px rgba(0,0,0,.65)', cursor: 'default'
+}
+}),
+lbCap: lb === null || !g[lb] ? '' : g[lb].caption,
+lbCount: lb === null || !g[lb] ? '' : (lb + 1) + ' / ' + g.length,
+closeLb: () => this.setState({ lb: null }),
+stopProp: (e) => e.stopPropagation(),
+prevLb: (e) => { e.stopPropagation(); this.setState(s => ({ lb: (s.lb - 1 + g.length) % g.length })); },
+nextLb: (e) => { e.stopPropagation(); this.setState(s => ({ lb: (s.lb + 1) % g.length })); }
+};
+}
+}
+</script>
+</body>
+</html>
